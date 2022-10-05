@@ -1,10 +1,16 @@
 body{
   background-color: #fff;
+  min-width: 100vw;
+  overflow-x: hidden;
 }
 
 a{
   color: var(--color-text);
   text-decoration: none;
+}
+
+li{
+  list-style: none;
 }
 
 .container_padding{

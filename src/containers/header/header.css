@@ -1,18 +1,52 @@
 .header{
-    width: 100vw;
-    height: 70vh;
+    min-width: 100vw;
+    height: 80vh;
     background-color: var(--color-bg);
-}
-
-.header{
+    overflow-x: hidden;
     display: flex;
     align-items: center;
 }
 
 .header h1{
-    font-size: 5rem;
+    font-size: 4rem;
+    transition: all .5s cubic-bezier(0.9,0.2,0.05,0.9);
+    -webkit-transition: all .5s cubic-bezier(0.9,0.2,0.05,0.9);
+    -moz-transition: all .5s cubic-bezier(0.9,0.2,0.05,0.9);
+    -ms-transition: all .5s cubic-bezier(0.9,0.2,0.05,0.9);
+    -o-transition: all .5s cubic-bezier(0.9,0.2,0.05,0.9);
 }
+
+.header h1:hover{
+    transform: skewx(-20deg);
+    -webkit-transform: skewx(-20deg);
+    -moz-transform: skewx(-20deg);
+    -ms-transform: skewx(-20deg);
+    -o-transform: skewx(-20deg);
+}
+
 .header p{
     line-height: 3rem;
-    font-size: 5rem;
+    font-size: 3rem;
+}
+
+@media screen and (max-width: 768px){
+    .header h1{
+        font-size: 2.8rem;
+    }
+    
+    .header p{
+        line-height: 2rem;
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .header h1{
+        font-size: 1.9rem;
+    }
+    
+    .header p{
+        line-height: 1.5rem;
+        font-size: 0.95rem;
+    }
 }
