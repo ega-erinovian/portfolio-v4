@@ -1,7 +1,23 @@
+
 import React from 'react'
-import './about.css'
+import './about.css';
 
 const About = () => {
+  // const [scrollPosition, setScrollPosition] = useState(0);
+  // const handleScroll = () => {
+  //     const position = window.pageYOffset;
+  //     setScrollPosition(position);
+  // };
+  
+  // useEffect(() => {
+  //     window.addEventListener('scroll', handleScroll, { passive: true });
+      
+  //     return () => {
+  //         window.removeEventListener('scroll', handleScroll);
+  //     };
+  // }, []);
+
+  // console.log(scrollPosition);
   return (
     <div className="about" id="about">
         <div className="container_padding">

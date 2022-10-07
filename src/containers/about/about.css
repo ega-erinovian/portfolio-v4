@@ -2,7 +2,6 @@
     margin: 150px 0 250px 0;
 }
 
-
 .about .about_content{
     display: grid;
     grid-template-columns: 45% auto;
@@ -10,6 +9,9 @@
 }
 
 .about .about_content h1{
+    position: sticky;
+    top: 100px;
+    height: fit-content;
     border-top: 2px solid #000;
     font-size: 4rem;
     font-weight: 300;
@@ -27,4 +29,28 @@
 .about .about_content p{
     font-size: 2rem;
     font-weight: 300;
+}
+
+/* Large Device */
+@media screen and (max-width: 1000px){
+    .about .about_content{
+        display: block;
+    }
+
+    .about .about_content h1{
+        border-bottom: 2px solid #000;
+        border-top: none;
+        font-size: 4rem;
+        margin-bottom: 3rem;
+        position: static;
+        top: 100px;
+    }
+}
+
+/* Small Device */
+@media screen and (max-width: 480px){
+    .about .about_content p{
+        font-size: 1.4rem;
+        font-weight: 300;
+    }
 }
