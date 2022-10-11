@@ -33,6 +33,10 @@
 
 /* Large Device */
 @media screen and (max-width: 1000px){
+    .about{
+        margin: 150px 0;
+    }
+
     .about .about_content{
         display: block;
     }
@@ -47,6 +51,10 @@
 
 /* Small Device */
 @media screen and (max-width: 480px){
+    .about{
+        margin: 100px 0;
+    }
+
     .about .about_content h1{
         font-size: var(--section-title);
     }

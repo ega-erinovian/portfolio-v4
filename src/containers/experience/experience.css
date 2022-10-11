@@ -1,5 +1,5 @@
 #exp{
-    margin: 150px 0 250px 0;
+    margin-bottom: 250px;
 }
 
 #exp .exp_content{
@@ -23,6 +23,10 @@
     -o-transition: all .5s cubic-bezier(0.9, 0.2, 0.05, 0.9);
 }
 
+#exp:hover .exp_content h1{
+    letter-spacing: 6px;
+}
+
 #exp .exp_content .exp_item{
     padding-bottom: 2rem;
     border-bottom: 1px solid #000;
@@ -35,6 +39,10 @@
 
 /* Large Device */
 @media screen and (max-width: 1000px){
+    #exp{
+        margin-bottom: 150px;
+    }
+    
     #exp .exp_content{
         display: block;
     }
@@ -49,6 +57,10 @@
 
 /* Small Device */
 @media screen and (max-width: 480px){
+    #exp{
+        margin-bottom: 100px;
+    }
+
     #exp .exp_content h1{
         font-size: var(--section-title);
     }

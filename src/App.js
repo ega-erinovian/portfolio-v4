@@ -3,6 +3,7 @@ import Navbar from './components/navbar/Navbar';
 import About from './containers/about/About';
 import Experience from './containers/experience/Experience';
 import Header from './containers/header/Header';
+import Skills from './containers/skills/Skills';
 import Work from './containers/work/Work';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <About />
       <Work />
       <Experience />
+      <Skills />
     </>
   );
 }
