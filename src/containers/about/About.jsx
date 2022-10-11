@@ -3,23 +3,8 @@ import React from 'react'
 import './about.css';
 
 const About = () => {
-  // const [scrollPosition, setScrollPosition] = useState(0);
-  // const handleScroll = () => {
-  //     const position = window.pageYOffset;
-  //     setScrollPosition(position);
-  // };
-  
-  // useEffect(() => {
-  //     window.addEventListener('scroll', handleScroll, { passive: true });
-      
-  //     return () => {
-  //         window.removeEventListener('scroll', handleScroll);
-  //     };
-  // }, []);
-
-  // console.log(scrollPosition);
   return (
-    <div className="about" id="about">
+    <section className="about" id="about">
         <div className="container_padding">
           <div className="about_content">
             <h1>About</h1>
@@ -30,10 +15,8 @@ const About = () => {
             </p>
           </div>
         </div>
-    </div>
+    </section>
   )
 }
 
 export default About
-
-// TODO: Mobile responsive about section

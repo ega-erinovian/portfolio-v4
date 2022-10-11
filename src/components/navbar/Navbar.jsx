@@ -5,6 +5,7 @@ const Navbar = () => {
   return (
     <div className="navbar">
         <div className='container_padding'>
+          <div className='mobile'>
             <div className="menuToggle">
               <input type="checkbox" />
               <span></span>
@@ -18,6 +19,7 @@ const Navbar = () => {
                 <li><a href="#">Contact</a></li>
               </ul>
             </div>
+          </div>
 
             <nav className='desktop'>
               <h1>E</h1>

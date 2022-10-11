@@ -47,14 +47,14 @@
 }
 
 .navbar .desktop ul li:hover{
-    transform: skewY(-10deg);
-    -webkit-transform: skewY(-10deg);
-    -moz-transform: skewY(-10deg);
-    -ms-transform: skewY(-10deg);
-    -o-transform: skewY(-10deg);
+    transform: skew(-20deg);
+    -webkit-transform: skew(-20deg);
+    -moz-transform: skew(-20deg);
+    -ms-transform: skew(-20deg);
+    -o-transform: skew(-20deg);
 }
 
-.menuToggle{
+.mobile .menuToggle{
     display: none;
 }
 
@@ -70,16 +70,22 @@
     .navbar .desktop{
         display: none;
     }
-    
-    .menuToggle{
+
+    .mobile{
+        width: 100%;
+        height: 50px;
         background-color: var(--color-bg);
+    }
+    
+    .mobile .menuToggle{
+        margin: 5px;
         border-radius: 50%;
-        padding: 1rem;
+        padding: .5rem;
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 25px;
-        right: 25px;
+        top: 12px;
+        right: 12px;
         z-index: 1;
         user-select: none;
         -webkit-border-radius: 50%;
@@ -88,7 +94,7 @@
         -o-border-radius: 50%;
 }
 
-    .menuToggle input{
+    .mobile .menuToggle input{
         display: flex;
         width: 40px;
         height: 32px;
@@ -98,11 +104,10 @@
         z-index: 2;
     }
     
-    .menuToggle span{
+    .mobile .menuToggle span{
         display: flex;
-        width: 29px;
-        height: 2px;
-        margin-bottom: 5px;
+        width: 1.3rem;
+        height: 2.5px;
         position: relative;
         background: var(--color-text);
         border-radius: 3px;
@@ -115,34 +120,52 @@
         -o-transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease;
     }
     
-    .menuToggle span:first-child
+    .mobile .menuToggle span:first-child
     {
-      transform-origin: 0% 0%;
+        transform-origin: 0% 0%;
     }
 
-    .menuToggle span:nth-last-child(2)
+    .mobile .menuToggle span:nth-child(2){
+        margin-bottom: 3px;
+    }
+
+    .mobile .menuToggle span:nth-child(3){
+        margin-bottom: 3px;
+    }
+
+    .mobile .menuToggle span:nth-last-child(2)
     {
       transform-origin: 0% 100%;
     }
 
-    .menuToggle input:checked ~ span
+    .mobile .menuToggle input:checked ~ span
     {
       opacity: 1;
-      transform: rotate(45deg) translate(-3px, -1px);
+      transform: rotate(45deg);
       background: #36383F;
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
     }
-    .menuToggle input:checked ~ span:nth-last-child(3)
+
+    .mobile .menuToggle input:checked ~ span:nth-last-child(3)
     {
       opacity: 0;
       transform: rotate(0deg) scale(0.2, 0.2);
     }
 
-    .menuToggle input:checked ~ span:nth-last-child(2)
+    .mobile .menuToggle input:checked ~ span:nth-last-child(2)
     {
-      transform: rotate(-45deg) translate(0, -1px);
-    }
+      margin: 0;
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+}
 
-    .menu{
+    .mobile .menuToggle .menu{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -176,7 +199,7 @@
         text-align: right;
     }
 
-    .menuToggle input:checked ~ ul
+    .mobile .menuToggle input:checked ~ ul
     {
       transform: none;
     }
@@ -190,5 +213,10 @@
     .menu li
     {
         font-size: 2rem;
+    }
+
+    .mobile .menuToggle{
+        top: 5px;
+        right: 5px;
     }
 }
