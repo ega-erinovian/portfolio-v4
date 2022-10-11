@@ -9,6 +9,7 @@
 }
 
 :root{
+  --section-title: 3rem;
   --color-text: #222222;
   --color-bg: #DAF4FF;
 }

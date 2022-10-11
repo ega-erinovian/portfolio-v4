@@ -1,5 +1,5 @@
 #work{
-    margin-bottom: 3rem;
+    margin: 150px 0 250px 0;
 }
 
 #work h1{
@@ -101,10 +101,14 @@
 }
 
 @media screen and (max-width: 480px){
+    #work:hover h1{
+        font-size: var(--section-title);
+    }
+
     #work .work-item-container .work-item-grid{
         display: block;
     }
-
+    
     #work .work-item-container .work-item{
         margin-bottom: 3rem;
     }
@@ -113,12 +117,12 @@
     #work .work-item-container .work-item:nth-child(4){
         margin-top: 0;
     }
-
+    
     #work .work-item-container .work-item .item-title a,
     #work .work-item-container .work-item .item-title .arrow-icon{
         font-size: 1rem;
     }
-
+    
     #work .work-item-container .work-item p{
         font-size: .7rem;
     }

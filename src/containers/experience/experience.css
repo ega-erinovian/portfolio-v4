@@ -1,0 +1,63 @@
+#exp{
+    margin: 150px 0 250px 0;
+}
+
+#exp .exp_content{
+    display: grid;
+    grid-template-columns: 45% auto;
+    grid-gap: 2rem;
+}
+
+#exp .exp_content h1{
+    position: sticky;
+    top: 100px;
+    height: fit-content;
+    font-size: 4rem;
+    font-weight: 300;
+    border-top: 2px solid #000;
+    margin-bottom: 2rem;
+    transition: all .5s cubic-bezier(0.9, 0.2, 0.05, 0.9);
+    -webkit-transition: all .5s cubic-bezier(0.9, 0.2, 0.05, 0.9);
+    -moz-transition: all .5s cubic-bezier(0.9, 0.2, 0.05, 0.9);
+    -ms-transition: all .5s cubic-bezier(0.9, 0.2, 0.05, 0.9);
+    -o-transition: all .5s cubic-bezier(0.9, 0.2, 0.05, 0.9);
+}
+
+#exp .exp_content .exp_item{
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #000;
+    margin-bottom: 3rem;
+}
+
+#exp .exp_content .exp_item h2{
+    font-size: 2rem;
+}
+
+/* Large Device */
+@media screen and (max-width: 1000px){
+    #exp .exp_content{
+        display: block;
+    }
+
+    #exp .exp_content h1{
+        font-size: 4rem;
+        margin-bottom: 3rem;
+        position: static;
+        top: 100px;
+    }
+}
+
+/* Small Device */
+@media screen and (max-width: 480px){
+    #exp .exp_content h1{
+        font-size: var(--section-title);
+    }
+
+    #exp .exp_content p{
+        font-size: 1rem;
+    }
+
+    #exp .exp_content .exp_item h2{
+        font-size: 1.3rem;
+    }
+}

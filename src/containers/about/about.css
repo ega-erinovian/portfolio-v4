@@ -47,6 +47,10 @@
 
 /* Small Device */
 @media screen and (max-width: 480px){
+    .about .about_content h1{
+        font-size: var(--section-title);
+    }
+
     .about .about_content p{
         font-size: 1.4rem;
         font-weight: 300;
