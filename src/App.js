@@ -1,6 +1,7 @@
 import './App.css';
 import Navbar from './components/navbar/Navbar';
 import About from './containers/about/About';
+import Contact from './containers/contact/Contact';
 import Experience from './containers/experience/Experience';
 import Header from './containers/header/Header';
 import Skills from './containers/skills/Skills';
@@ -15,6 +16,7 @@ function App() {
       <Work />
       <Experience />
       <Skills />
+      <Contact />
     </>
   );
 }

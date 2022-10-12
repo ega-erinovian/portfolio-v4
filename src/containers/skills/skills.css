@@ -39,12 +39,13 @@
 }
 
 #skills .skills_content h2:nth-child(3):hover{
-    color: rgb(231, 209, 100);
+    color: rgb(115, 228, 164);
 }
 
 #skills .skills_content h2:nth-child(4):hover{
-    color: rgb(115, 228, 164);
+    color: rgb(231, 209, 100);
 }
+
 
 @media screen and (max-width: 1000px) {
     #skills{
@@ -60,10 +61,7 @@
     #skills{
         margin-bottom: 100px;
     }
-
-    #skills h1{
-        font-size: 2rem;
-    }
+    
     #skills .skills_content h2{
         font-size: 1.6rem;
     }
