@@ -1,5 +1,7 @@
 .about{
-    margin: 150px 0 250px 0;
+    position: relative;
+    top: 150px;
+    padding: 150px 0 250px 0;
 }
 
 .about .about_content{

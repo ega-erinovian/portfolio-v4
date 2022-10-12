@@ -3,6 +3,7 @@ import Navbar from './components/navbar/Navbar';
 import About from './containers/about/About';
 import Contact from './containers/contact/Contact';
 import Experience from './containers/experience/Experience';
+import Footer from './containers/footer/Footer';
 import Header from './containers/header/Header';
 import Skills from './containers/skills/Skills';
 import Work from './containers/work/Work';
@@ -17,6 +18,7 @@ function App() {
       <Experience />
       <Skills />
       <Contact />
+      <Footer />
     </>
   );
 }
