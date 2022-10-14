@@ -8,10 +8,10 @@ const Contact = () => {
             <h1>Have A Project in Mind ?</h1>
             <div className="contact_content">
                 <div className="contact_socmed">
-                    <a href="#">Instagram</a>
-                    <a href="#">LinkedIn</a>
-                    <a href="#">Github</a>
-                    <a href="#">Netlify</a>
+                    <a href="https://www.instagram.com/egaerinovian/" target="_blank">Instagram</a>
+                    <a href="https://www.linkedin.com/in/ega-erinovian/" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/ega-erinovian" target="_blank">Github</a>
+                    <a href="https://app.netlify.com/teams/egaputra69/overview" target="_blank">Netlify</a>
                     <a href="#">GMail</a>
                 </div>
                 <div className="contact_form">

@@ -96,6 +96,10 @@
 }
 
 @media screen and (max-width: 1000px){
+    #contact{
+        margin-top: -150px;
+        padding: 150px 0 150px 0;
+    }
     #contact h1{
         font-size: 2.5rem;
     }

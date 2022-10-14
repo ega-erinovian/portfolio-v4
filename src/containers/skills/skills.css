@@ -50,7 +50,8 @@
 
 @media screen and (max-width: 1000px) {
     #skills{
-        margin-bottom: 150px;
+        margin-top: -150px;
+        padding: 150px 0 150px 0;
     }
 
     #skills .skills_content h2{
@@ -59,10 +60,6 @@
 }
 
 @media screen and (max-width: 576px) {
-    #skills{
-        margin-bottom: 100px;
-    }
-    
     #skills .skills_content h2{
         font-size: 1.6rem;
     }

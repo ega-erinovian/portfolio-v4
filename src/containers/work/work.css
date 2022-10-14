@@ -103,13 +103,14 @@
 
 @media screen and (max-width: 1000px) {
     #work{
-        margin-bottom: 150px;
+        top: -150px;
+        padding: 150px 0 150px 0;
     }
 }
 
 @media screen and (max-width: 480px){
     #work{
-        margin-bottom: 100px;
+        
     }
 
     #work h1{
