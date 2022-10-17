@@ -1,15 +1,15 @@
 import React from 'react'
 import { FaArrowRight } from 'react-icons/fa';
 
-const WorkItem = ({img}) => {
+const WorkItem = ({img, title, desc}) => {
   return (
     <div className="work-item">
         <img src={img} alt='work-img'/>
         <div className="item-title">
-            <a>Online Museum App</a>
+            <a>{title}</a>
             <FaArrowRight className='arrow-icon'/>
         </div>
-        <p>Meet Digital Museum Concept.</p>
+        <p>{desc}</p>
     </div>
   )
 }
