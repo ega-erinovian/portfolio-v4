@@ -148,6 +148,10 @@
 }
 
 @media screen and (max-width: 576px){
+    #contact{
+        margin-top: -100px;
+        padding: 100px 0 150px 0;
+    }
     #contact .contact_content .contact_socmed a{
         font-size: 1.5rem;
     }

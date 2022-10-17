@@ -20,6 +20,7 @@
 }
 
 #skills .skills_content h2{
+    cursor: pointer;
     font-size: 4rem;
     font-weight: 600;
     border-bottom: 1px solid #000;
@@ -66,6 +67,14 @@
 }
 
 @media screen and (max-width: 480px) {
+    #skills{
+        margin-top: -100px;
+        padding: 100px 0 150px 0;
+    }
+    #skills h1{
+        font-size: 2rem;
+    }
+
     #skills .skills_content h2{
         font-size: 1.1rem;
         padding: 1rem 0;
