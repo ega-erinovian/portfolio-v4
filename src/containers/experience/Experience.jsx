@@ -5,14 +5,22 @@ import './experience.css'
 const Experience = () => {
     const expItem = [
         {
+            id: 1,
             title: "Lab Assistant",
             location: "UPN Veteran Yogyakarta",
             date: "March 2021 - Present"
-        },
-        {
+          },
+          {
+            id: 2,
             title: "Full Stack Web Developer",
             location: "Rumahweb Indonesia",
             date: "March 2022 - May 2022"
+          },
+          {
+            id: 3,
+            title: "Chief Information Officer (CIO)",
+            location: "Sirius Creative",
+            date: "December 2023 - Now"
         }
     ]
   return (
@@ -21,8 +29,7 @@ const Experience = () => {
           <div className="exp_content">
             <h1>Experience</h1>
             <div className="exp-item_container">
-                <ExpItem title={expItem[0].title} location={"At " + expItem[0].location} date={expItem[0].date} />
-                <ExpItem title={expItem[1].title} location={"At " + expItem[1].location} date={expItem[1].date} />
+            {expItem && expItem.map((item) => <ExpItem key={item.id} title={item.title} location={"At " + item.location} date={item.date} />)}
             </div>
           </div>
         </div>

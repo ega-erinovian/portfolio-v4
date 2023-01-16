@@ -1,5 +1,5 @@
 import React from 'react'
-import MyImg from '../../assets/footer/my-img.jpg'
+import MyImg from '../../assets/footer/protfolio_footer_img.webp'
 import './footer.css';
 
 const Footer = () => {
