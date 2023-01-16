@@ -1,24 +1,18 @@
 import './App.css';
-import Navbar from './components/navbar/Navbar';
-import About from './containers/about/About';
-import Contact from './containers/contact/Contact';
-import Experience from './containers/experience/Experience';
-import Footer from './containers/footer/Footer';
-import Header from './containers/header/Header';
-import Skills from './containers/skills/Skills';
-import Work from './containers/work/Work';
+import Home from './containers/Home';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Gallery from './containers/work_gallery/Gallery';
+
 
 function App() {
   return (
     <>
-      <Navbar />
-      <Header />
-      <About />
-      <Work />
-      <Experience />
-      <Skills />
-      <Contact />
-      <Footer />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} exact />
+          <Route path="Works" element={<Gallery />} exact />
+        </Routes>
+      </Router>
     </>
   );
 }
