@@ -1,7 +1,8 @@
 import './App.css';
-import Home from './containers/Home';
+import Home from './Home';
+import Footer from "./containers/footer/Footer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Gallery from './containers/work_gallery/Gallery';
+import { Gallery, WorkDetail } from "./containers";
 
 
 function App() {
@@ -11,8 +12,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} exact />
           <Route path="Works" element={<Gallery />} exact />
+          <Route path="Works/:name" element={<WorkDetail />} exact />
         </Routes>
       </Router>
+      <Footer />
     </>
   );
 }

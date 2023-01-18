@@ -1,17 +1,15 @@
 import React from 'react'
-import Header from '../header/Header'
 import { workDatas } from "../../work_data";
-import WorkItem from '../../components/work-item/WorkItem'
+import { WorkItem } from "../../components";
 
-import { FaArrowLeft } from 'react-icons/fa';
 import './gallery.css';
+import HeaderComp from '../../components/headerComp/HeaderComp';
 
 
 const Gallery = () => {
   return (
     <>
-      <a href='/' className='arrow-left-link'><FaArrowLeft className='arrow-left'/></a>
-      <Header title='Project Gallery'/>
+      <HeaderComp title={'Project Gallery'} link={"/"} />
       <section className='work-gallery'>
         <div className='container_padding'>
           <div className='work-item-container'>

@@ -1,11 +1,9 @@
 import React from 'react'
-import MyImg from '../../assets/footer/protfolio_footer_img.webp'
 import './footer.css';
 
 const Footer = () => {
   return (
-    <section id='footer'>
-        <img src={MyImg} alt="My-Img" />
+    <footer id='footer'>
         <div className="footer_content">
             <div className="container_padding">
                 <h1>E</h1>
@@ -13,7 +11,7 @@ const Footer = () => {
             </div>
             <p>&#169; 2022 Ega Erinovian</p>
         </div>
-    </section>
+    </footer>
   )
 }
 

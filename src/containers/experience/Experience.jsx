@@ -20,7 +20,7 @@ const Experience = () => {
             id: 3,
             title: "Chief Information Officer (CIO)",
             location: "Sirius Creative",
-            date: "December 2023 - Now"
+            date: "December 2022 - Now"
         }
     ]
   return (

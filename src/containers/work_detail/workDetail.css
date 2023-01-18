@@ -1,0 +1,28 @@
+.work-detail{
+    display:inline-block;
+    margin-bottom: 16rem;
+}
+
+.work-desc{
+    display: flex;
+    align-items: center;
+    margin-top: 16rem;
+}
+
+.work-desc p{
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+.work-desc img{
+    width: 50%;
+}
+
+.work-img img{
+    width: 40%;
+}
+
+.work-img{
+    margin-top: 20rem;
+    text-align: center;
+}
