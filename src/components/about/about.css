@@ -1,8 +1,8 @@
 .about{
     position: relative;
-    padding-top: 100px;
-    margin-top: 75px;
-    margin-bottom: 250px;
+    padding-top: 10rem;
+    margin-top: 7rem;
+    margin-bottom: 15rem;
 }
 
 .about .about_content{
@@ -36,11 +36,6 @@
 
 /* Large Device */
 @media screen and (max-width: 1000px){
-    .about{
-        margin-top: -150px;
-        padding: 150px 0 250px 0;
-    }
-
     .about .about_content{
         display: block;
     }
@@ -55,6 +50,11 @@
 
 /* Small Device */
 @media screen and (max-width: 480px){
+    .about{
+        padding-top: 7rem;
+        margin-top: 3rem;
+        margin-bottom: 7rem;
+    }
     .about .about_content h1{
         font-size: var(--section-title);
     }

@@ -32,7 +32,7 @@ export default class WorkDetail extends Component {
             <section className="work-detail">
               <HeaderComp title={work[workIndex].title} link={'/Works'} color={work[workIndex].color} />
               <div className="work-detail-content container_padding">
-                <Fade bottom>  
+                <Fade bottom>
                   <div className="work-desc">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro iure et ea, labore obcaecati voluptates maiores adipisci aut ipsam modi eaque aliquid a aperiam itaque, minima corrupti saepe dignissimos accusamus at facilis eveniet error! Explicabo porro amet sit animi voluptate.</p>
                     <img src={work[workIndex].mockup[0]} alt={work[workIndex].title} />

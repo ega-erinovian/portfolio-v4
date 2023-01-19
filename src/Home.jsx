@@ -17,7 +17,7 @@ const Home = () => {
           <Skills />
           <Contact />
         </Fade>
-        <img src={MyImg} alt="My-Img" />
+        <img src={MyImg} alt="My-Img" className='footer-img'/>
         <Footer />
     </>
   )

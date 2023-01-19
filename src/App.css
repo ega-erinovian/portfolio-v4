@@ -37,7 +37,21 @@ li{
   padding: 0 10vw;
 }
 
+.footer-img{
+  margin-bottom: -1rem;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1000px) {
+  .footer-img{
+    height: 30rem;
+  }
+}
+
 @media screen and (max-width: 480px){
+  .footer-img{
+    height: 20rem;
+  }
   .container_padding{
     padding: 0 8vw;
   }
