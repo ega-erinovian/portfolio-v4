@@ -26,3 +26,34 @@
     margin-top: 20rem;
     text-align: center;
 }
+
+@media screen and (max-width: 1000px) {
+    .work-desc{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .work-desc img{
+        width: 100%;
+        margin-bottom: 4rem;
+    }
+
+    .work-desc:first-child{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .work-desc p{
+        text-align: center;
+    }
+
+    .work-img img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .work-desc p{
+        font-size: 1rem;
+    }
+}

@@ -1,4 +1,5 @@
 #footer {
+  background-color: var(--color-bg);
   min-width: 100vw;
   display: flex;
   flex-direction: column;
@@ -12,7 +13,6 @@
 }
 
 #footer .footer_content .container_padding{
-    background-color: var(--color-bg);
     height: 50vh;
     display: flex;
     align-items: center;
@@ -43,7 +43,6 @@
 }
 
 #footer .footer_content p{
-    background-color: var(--color-bg);
     text-align: center;
     padding: 0 0 1rem 0;
 }

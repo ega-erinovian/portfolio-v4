@@ -1,6 +1,5 @@
 import './App.css';
 import Home from './Home';
-import Footer from "./containers/footer/Footer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Gallery, WorkDetail } from "./containers";
 
@@ -15,7 +14,6 @@ function App() {
           <Route path="Works/:name" element={<WorkDetail />} exact />
         </Routes>
       </Router>
-      <Footer />
     </>
   );
 }

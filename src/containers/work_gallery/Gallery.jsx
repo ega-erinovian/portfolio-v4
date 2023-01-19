@@ -1,9 +1,12 @@
 import React from 'react'
+import Fade from 'react-reveal/Fade';
+
 import { workDatas } from "../../work_data";
-import { WorkItem } from "../../components";
 
 import './gallery.css';
-import HeaderComp from '../../components/headerComp/HeaderComp';
+
+import { HeaderComp, WorkItem } from "../../components";
+import { Footer } from "../../containers";
 
 
 const Gallery = () => {
@@ -14,11 +17,14 @@ const Gallery = () => {
         <div className='container_padding'>
           <div className='work-item-container'>
             <div className='work-item-grid'>
-              {workDatas && workDatas.map((item) => <WorkItem img={item.img} title={item.title} desc={item.desc} />)}
+              <Fade bottom>
+                {workDatas && workDatas.map((item) => <WorkItem img={item.img} title={item.title} desc={item.desc} />)}
+              </Fade>
             </div>
           </div>
         </div>
       </section>
+      <Footer />
     </>
   )
 }

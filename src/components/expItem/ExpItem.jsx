@@ -4,7 +4,7 @@ const ExpItem = ({title, location, date}) => {
   return (
     <div className="exp_item">
         <h2>{title}</h2>
-        <p>{location}</p>
+        <p>At <b>{location}</b></p>
         <p>{date}</p>
     </div>
   )

@@ -14,15 +14,15 @@ const Contact = () => {
                     <a href="https://app.netlify.com/teams/egaputra69/overview" target="_blank">Netlify</a>
                     <a href="#">GMail</a>
                 </div>
-                <div className="contact_form">
+                <form className="contact_form" name="submit-to-google-sheet">
                     <div className="contact_name">
-                        <input type="text" className="form_name" placeholder="Your Name" />
-                        <input type="email" className="form_name" placeholder="Your Email"/>
+                        <input type="text" name='name' className="form_name" placeholder="Your Name" />
+                        <input type="email" name='email' className="form_name" placeholder="Your Email"/>
                     </div>
-                    <input type="text" className="form_subject" placeholder="Subject"/>
-                    <textarea className="form_text" placeholder="Say What You Need to Say ..."/>
-                    <button>Submit</button>
-                </div>
+                    <input type="text" name='subject' className="form_subject" placeholder="Subject"/>
+                    <textarea className="form_text" name='message' placeholder="Say What You Need to Say ..."/>
+                    <button type='submit'>Send</button>
+                </form>
             </div>
         </div>
     </section>

@@ -29,7 +29,7 @@ const Experience = () => {
           <div className="exp_content">
             <h1>Experience</h1>
             <div className="exp-item_container">
-              {expItem && expItem.map((item) => <ExpItem key={item.id} title={item.title} location={"At " + item.location} date={item.date} />)}
+              {expItem && expItem.map((item) => <ExpItem key={item.id} title={item.title} location={item.location} date={item.date} />)}
             </div>
           </div>
         </div>

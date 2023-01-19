@@ -6,7 +6,7 @@ import Tilt from 'react-parallax-tilt';
 const WorkItem = ({img, title, desc, link}) => {
   return (
     <a href={"/Works/" + title}>
-      <Tilt tiltMaxAngleX={7} tiltMaxAngleY={7}>
+      <Tilt tiltMaxAngleX={7} tiltMaxAngleY={7} tiltReverse={true}>
         <div className="work-item">
             <img src={img} alt='work-img'/>
             <div className="item-title">
