@@ -34,12 +34,12 @@ export default class WorkDetail extends Component {
               <div className="work-detail-content container_padding">
                 <Fade bottom>
                   <div className="work-desc">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro iure et ea, labore obcaecati voluptates maiores adipisci aut ipsam modi eaque aliquid a aperiam itaque, minima corrupti saepe dignissimos accusamus at facilis eveniet error! Explicabo porro amet sit animi voluptate.</p>
+                    <p>{work[workIndex].description[0]}</p>
                     <img src={work[workIndex].mockup[0]} alt={work[workIndex].title} />
                   </div>
                   <div className="work-desc">
                     <img src={work[workIndex].mockup[1]} alt={work[workIndex].title} />
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro iure et ea, labore obcaecati voluptates maiores adipisci aut ipsam modi eaque aliquid a aperiam itaque, minima corrupti saepe dignissimos accusamus at facilis eveniet error! Explicabo porro amet sit animi voluptate.</p>
+                    <p>{work[workIndex].description[1]}</p>
                   </div>
                   <div className="work-img">
                     <img src={work[workIndex].mockup[2]} alt={work[workIndex].title} />
