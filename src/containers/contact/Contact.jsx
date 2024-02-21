@@ -7,7 +7,7 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    const gmailLink = `https://mail.google.com/mail/u/0/?fs=1&to=egaputra71@gmail.com&su=${subject}&body=Hi Ega! I am ${name} (continue your message...)&tf=cm`;
+    const gmailLink = `https://mail.google.com/mail/u/0/?fs=1&to=erinovian69@gmail.com.com&su=${subject}&body=Hi Ega! I am ${name} (continue your message...)&tf=cm`;
     window.open(gmailLink, "_blank");
   };
 
