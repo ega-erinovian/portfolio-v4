@@ -1,66 +1,68 @@
-.about{
-    position: relative;
-    padding-top: 10rem;
-    margin-top: 7rem;
-    margin-bottom: 15rem;
+.about {
+  position: relative;
+  padding-top: 10rem;
+  margin-top: 7rem;
+  margin-bottom: 15rem;
 }
 
-.about .about_content{
-    display: grid;
-    grid-template-columns: 45% auto;
-    grid-gap: 2rem;
+.about .about_content {
+  display: grid;
+  grid-template-columns: 45% auto;
+  grid-gap: 2rem;
 }
 
-.about .about_content h1{
-    position: sticky;
-    top: 100px;
-    height: fit-content;
-    border-top: 2px solid #000;
-    font-size: 4rem;
-    font-weight: 300;
-    transition: all .5s cubic-bezier(0.9,0.2,0.05,0.9);
-    -webkit-transition: all .5s cubic-bezier(0.9,0.2,0.05,0.9);
-    -moz-transition: all .5s cubic-bezier(0.9,0.2,0.05,0.9);
-    -ms-transition: all .5s cubic-bezier(0.9,0.2,0.05,0.9);
-    -o-transition: all .5s cubic-bezier(0.9,0.2,0.05,0.9);
+.about .about_content h1 {
+  position: sticky;
+  top: 100px;
+  height: fit-content;
+  border-top: 2px solid #000;
+  font-size: 4rem;
+  font-weight: 300;
+  transition: all 0.5s cubic-bezier(0.9, 0.2, 0.05, 0.9);
+  -webkit-transition: all 0.5s cubic-bezier(0.9, 0.2, 0.05, 0.9);
+  -moz-transition: all 0.5s cubic-bezier(0.9, 0.2, 0.05, 0.9);
+  -ms-transition: all 0.5s cubic-bezier(0.9, 0.2, 0.05, 0.9);
+  -o-transition: all 0.5s cubic-bezier(0.9, 0.2, 0.05, 0.9);
 }
 
-.about:hover .about_content h1{
-    letter-spacing: 6px;
+.about:hover .about_content h1 {
+  letter-spacing: 6px;
 }
 
-.about .about_content p{
-    font-size: 2rem;
-    font-weight: 300;
+.about .about_content p {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 3.5rem;
+  letter-spacing: 1px;
 }
 
 /* Large Device */
-@media screen and (max-width: 1000px){
-    .about .about_content{
-        display: block;
-    }
+@media screen and (max-width: 1000px) {
+  .about .about_content {
+    display: block;
+  }
 
-    .about .about_content h1{
-        font-size: 4rem;
-        margin-bottom: 3rem;
-        position: static;
-        top: 100px;
-    }
+  .about .about_content h1 {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+    position: static;
+    top: 100px;
+  }
 }
 
 /* Small Device */
-@media screen and (max-width: 480px){
-    .about{
-        padding-top: 7rem;
-        margin-top: 3rem;
-        margin-bottom: 7rem;
-    }
-    .about .about_content h1{
-        font-size: var(--section-title);
-    }
+@media screen and (max-width: 480px) {
+  .about {
+    padding-top: 7rem;
+    margin-top: 3rem;
+    margin-bottom: 7rem;
+  }
+  .about .about_content h1 {
+    font-size: var(--section-title);
+  }
 
-    .about .about_content p{
-        font-size: 1.4rem;
-        font-weight: 300;
-    }
+  .about .about_content p {
+    font-size: 1.4rem;
+    font-weight: 300;
+  }
 }

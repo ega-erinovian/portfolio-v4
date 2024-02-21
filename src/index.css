@@ -1,15 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
 }
 
-:root{
+:root {
   --section-title: 2rem;
-  --color-text: #2A2A2A;
-  --color-bg: #DAF4FF;
+  --color-text: #2a2a2a;
+  --color-bg: #daf4ff;
 }
